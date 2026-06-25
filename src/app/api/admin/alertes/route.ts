@@ -1,7 +1,7 @@
+export const dynamic = "force-dynamic";
 
 import { handler, json, requireAdmin } from "@/lib/http";
 import { sql } from "@/lib/db";
-import dynamic from "next/dynamic";
 
 // GET /api/admin/alertes?niveau=...&limite=... (port de get_alertes_securite)
 export const GET = handler(async (req) => {
