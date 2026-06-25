@@ -1,3 +1,4 @@
+export const dynamic = "fort dynamic";
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { verifyPassword, createAccessToken } from "@/lib/security";

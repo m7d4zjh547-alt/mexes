@@ -1,3 +1,4 @@
+export const dynamic = "fort dynamic";
 import { json } from "@/lib/http";
 
 export async function GET() {

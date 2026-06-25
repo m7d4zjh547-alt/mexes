@@ -1,3 +1,4 @@
+export const dynamic = "fort dynamic";
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { repondreMessage } from "@/lib/chatbot";
