@@ -1,4 +1,4 @@
-export const dynamic = "fort dynamic";
+export const dynamic = "fort-dynamic";
 import { handler, json, ApiError, requireAdmin } from "@/lib/http";
 import { sql } from "@/lib/db";
 

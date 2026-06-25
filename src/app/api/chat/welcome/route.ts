@@ -1,3 +1,4 @@
+export const dynamic = "fort-dynamic";
 import { json } from "@/lib/http";
 
 // POST /api/chat/welcome — message d'accueil (port de chat_welcome)
