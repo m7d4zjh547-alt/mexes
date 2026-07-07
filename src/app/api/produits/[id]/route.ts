@@ -1,5 +1,6 @@
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // GET /api/produits/{id} — détail produit (port de detail_produit)
 export const GET = handler(async (_req, { params }) => {

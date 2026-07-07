@@ -1,5 +1,6 @@
 import { handler, json, ApiError, requireUser } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 const MODES = ["MTN Money", "Orange Money", "UBA"];
 

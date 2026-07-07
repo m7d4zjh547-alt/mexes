@@ -2,6 +2,7 @@ import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { hashPassword, generateOtp } from "@/lib/security";
 import { randomBytes } from "crypto";
+export const dynamic = 'force-dynamic';
 
 const APP_WEB_URL = process.env.APP_WEB_URL || "https://app.cleminutes.cm";
 

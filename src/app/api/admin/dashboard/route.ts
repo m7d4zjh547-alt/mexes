@@ -1,5 +1,6 @@
 import { handler, json, requireAdmin } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 const STATUTS = ["En attente", "Confirmée", "En livraison", "Livrée", "Annulée"];
 

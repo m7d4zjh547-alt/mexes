@@ -1,5 +1,6 @@
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // PATCH /api/commandes/{id}/gps-livreur — position du livreur (port de mettre_a_jour_gps_livreur)
 export const PATCH = handler(async (req, { params }) => {

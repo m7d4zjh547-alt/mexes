@@ -1,5 +1,6 @@
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // POST /api/commandes/{id}/confirmer-paiement (port de livraison.confirmer_paiement)
 export const POST = handler(async (_req, { params }) => {

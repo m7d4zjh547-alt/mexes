@@ -1,5 +1,6 @@
 import { handler, json, ApiError, requireUser } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // POST /api/panier/valider — valide le panier et crée une commande (port de valider_panier)
 export const POST = handler(async (req) => {

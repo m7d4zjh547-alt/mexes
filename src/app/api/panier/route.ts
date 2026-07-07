@@ -1,5 +1,7 @@
 import { handler, json, requireUser } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
+
 
 // GET /api/panier — récupère ou crée le panier actif (port de get_panier)
 export const GET = handler(async (req) => {

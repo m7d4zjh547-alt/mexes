@@ -1,6 +1,7 @@
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { hashPassword } from "@/lib/security";
+export const dynamic = 'force-dynamic';
 
 // POST /api/setup-admin — crée le premier administrateur (port de main.py:setup_admin_direct)
 export const POST = handler(async (req) => {

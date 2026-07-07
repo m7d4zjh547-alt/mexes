@@ -1,6 +1,7 @@
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { createAccessToken } from "@/lib/security";
+export const dynamic = 'force-dynamic';
 
 // POST /api/auth/verify-otp — active le compte + renvoie le JWT (port de verifier_otp)
 export const POST = handler(async (req) => {

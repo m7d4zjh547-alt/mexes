@@ -1,5 +1,6 @@
 import { handler, json, ApiError, requireUser } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // GET /api/commandes/{id} — détail d'une commande de l'utilisateur (port de detail_commande)
 export const GET = handler(async (req, { params }) => {

@@ -1,5 +1,6 @@
 import { handler, json, requireAdmin } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // GET /api/admin/commandes?statut=...&limite=... (port de get_toutes_commandes)
 export const GET = handler(async (req) => {

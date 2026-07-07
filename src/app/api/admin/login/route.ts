@@ -1,6 +1,7 @@
 import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { verifyPassword, createAccessToken } from "@/lib/security";
+export const dynamic = 'force-dynamic';
 
 // POST /api/admin/login — connexion administrateur (port de login_admin)
 export const POST = handler(async (req) => {

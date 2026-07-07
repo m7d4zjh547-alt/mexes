@@ -1,6 +1,6 @@
 import { handler, json, ApiError, requireUser } from "@/lib/http";
 import { sql } from "@/lib/db";
-
+export const dynamic = 'force-dynamic';
 // GET /api/auth/me — profil de l'utilisateur connecté (port de mon_profil)
 export const GET = handler(async (req) => {
   const payload = await requireUser(req);

@@ -2,6 +2,7 @@ import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { repondreMessage } from "@/lib/chatbot";
 
+
 // POST /api/chat — répond à un message et mémorise la session (port de chatbot.py)
 export const POST = handler(async (req) => {
   const { message, history = [], service = null, session_id = null, canal = "web" } =

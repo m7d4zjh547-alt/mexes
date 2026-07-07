@@ -2,6 +2,7 @@ import { handler, json, ApiError } from "@/lib/http";
 import { sql } from "@/lib/db";
 import { hashPassword } from "@/lib/security";
 import { randomBytes } from "crypto";
+export const dynamic = 'force-dynamic';
 
 // POST /api/produits/commande — commande client simple sans auth (port de creer_commande_client)
 export const POST = handler(async (req) => {

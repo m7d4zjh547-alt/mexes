@@ -1,5 +1,6 @@
 import { handler, json, ApiError, requireUser } from "@/lib/http";
 import { sql } from "@/lib/db";
+export const dynamic = 'force-dynamic';
 
 // POST /api/panier/ajouter — ajoute un produit au panier (port de ajouter_au_panier)
 export const POST = handler(async (req) => {
